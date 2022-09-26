@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto';
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-header-top-bar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.copy-header{
+    display: none;
+    font-weight: 200px;
+    text-align: center;
+    font-size: 12px;
+    margin: 12px;
+}
+
+.copy-header2 {
+    font-weight: 200px;
+    text-align: center;
+    font-size: 12px;
+    margin: 12px;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    margin: 0 0 0 8px;
+}
+
+.boton-search {
+    background-color: rgba(255, 255, 255, 0.068);
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    max-width: 20px;
+    padding: 0;
+}
+
+.hamburguesa {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.home-banner {
+    display: flex;
+    width: 100%;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    display: inline-block;
+    color: #222222;
+    margin: 0 5px;
+}
+
+.productos {
+    width: 200px;
+}
+
+.main-footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy-footer {
+    max-width: 250px;
+    font-size: 12px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.fa-sharp2 {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#copyright {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.main-main {
+    /*border: solid 2px blue;*/
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+}
+
+.box {
+    border: solid 1px #ebebeb;
+    
+}
+
+.titulos {
+    font-size: 24px;
+}
+
+#descripcion {
+    display: none;
+}
+
+.product {
+    /*border: solid 2px salmon;*/
+    display: flex;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.price {
+    width: 30%;
+    font-size: 18px;
+}
+
+.off {
+    width: 70%;
+    color: #39b54a; 
+    font-size: 16px;
+    position: left;
+}
+
+.fa-solid2 {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+#copyright2 {
+    display: none;
+}
+
+@media (min-width: 768px){
+    .logo {
+        width: 200px;
+    }
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .copy-header {
+        display: block;
+        max-width: 250px;
+        text-align: right;
+    }
+    .copy-header2 {
+        display: none;
+    }
+    .search {
+        width: 30%;
+    }
+    .hamburguesa {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-main {
+        display: flex;
+        justify-content: space-around;
+    }
+    .box{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    /* FORM REGISTRO */
+
+    .create-form {
+        padding: 20px;
+        background-color: #ebebeb;
+
+    }
+    .control-formulario {
+        margin-bottom: 15px;
+    }
+    .control-formulario label {
+        margin-bottom: 5px;
+        display: block;
+        font-weight: bold;
+    }
+    .date {
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .foto-usuario {
+        margin-top: 5px;
+    }
+    .control {
+        width: 40%;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+    }
+    .opciones {
+        margin: 5px 8px;
+    }
+    .boton-formulario {
+        background-color: #1259c3;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    /* FORM LOGIN */
+
+    .form-login {
+        padding: 20px;
+        background-color: #ebebeb;
+
+    }
+    .login {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .control-login {
+        width: 50%;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+    }
+    .boton-login{
+        background-color: #1259c3;
+        border: none;
+        font-size: 15px;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    #copyright2 {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 250px;
+    }
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto; 
+    }
+    .main-header-top-bar {
+        align-items: center;
+    }
+    .search {
+        width: 30%;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .main-navbar {
+        margin-top: 30px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    #descripcion:hover {
+        opacity: 1;
+    }
+    #descripcion {
+        display: flex;
+        opacity: 0;
+        transition: all 450ms;
+    }
+    .fa-solid2:hover {
+        animation: rotate 5s linear infinite;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg)
+        }
+        100%{
+            transform: rotate(360deg)
+        }
+    }
+    .boton-login:hover {
+        background-color: #0022AA;
+    }
+    .main-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #copyright {
+        display: none;
+    }
+    #copyright2 {
+        display: block;
+        margin: 5px 20px;
+    }
+    .fa-sharp2:hover {
+        color: #021b7e;
+    }
+}
